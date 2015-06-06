@@ -1,0 +1,290 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Description" content="Austin tech startup helping nonprofits fundraise more effectively using crowdfunding and gamification techniques.">
+    <meta name="Keywords" content="nonprofit, crowdfunding, fundraising, social fundraising">
+    <title>MultiplyMe - Changing Fundraising Forever</title>
+    <link href='http://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="component.css">
+    <style>
+        body {
+            font-family: 'Nunito', sans-serif;
+        }
+
+        .banner-background {
+            top: 0;
+            height: 100%;
+            position: absolute;
+            padding-top: 0;
+            z-index: -1;
+            background: #333;
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            background-image: url("http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_528a8fb8a276d_1.JPG");
+        }
+
+        nav {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            /*padding-top: 50px;*/
+            font-size: 16px;
+        }
+
+        .nav-container {
+            position: relative;
+            margin: 0 auto;
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        .nav-logo:before {
+            /*content: "MultiplyMe";*/
+        }
+
+        .nav-logo {
+            padding-top: 30px;
+            float: left;
+        }
+
+        .nav-logo img{
+            width: 150px;
+        }
+
+        .nav-links {
+            float: right;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            padding-left: 12px;
+            padding-right: 12px;
+        }
+
+        .tagline-container {
+            position: absolute;
+            left: 13%;
+            top: 30%;
+        }
+
+        .tagline-small {
+            margin-left: 3px;
+            color: #4A4A4A;
+        }
+
+        .tagline-big {
+            font-weight: 100;
+            font-size: 58px;
+            letter-spacing: -2.1px;
+            line-height: 60px;
+            margin-bottom: 10px;
+        }
+
+        .tagline-emphasis {
+            display: block;
+        }
+
+        .tagline-btn {
+            margin-left: 5px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .btn-success,
+        .btn-success:focus,
+        .btn-success:link,
+        .btn-success:visited {
+            background-color: #50E3C2;
+            border-color: transparent;
+            color: black;
+            border-radius: 8px;
+            padding-left: 30px;
+            padding-right: 30px;
+        }
+
+        .btn-success:hover,
+        .btn-success:active {
+            background-color: #278570;
+            border-color: transparent;
+            color: white;
+        }
+
+        .request-container {
+            position: absolute;
+            top: 100%;
+            background-color: #271C36;
+            height: 550px;
+            width: 100%;
+            padding: 50px;
+        }
+
+        .text-white {
+            color: white;
+        }
+
+        .input {
+            font-size: 30px;
+            display: block;
+            max-width: 650px;
+            text-align: center;
+        }
+
+        .input--isao {
+            margin: 0 auto;
+        }
+
+        .btn-request {
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 15px;
+            padding-bottom: 15px;
+            font-size: 20px;
+            font-weight: lighter;
+            width: 350px;
+            display: block;
+            margin: 0 auto;
+            top: 30px;
+            position: relative;
+        }
+
+        .input__label-content  {
+            font-weight: lighter;
+        }
+
+        /*.about-container {
+            position: absolute;
+            top: calc(100% + 500px);
+            width: 100%;
+            height: 500px;
+        }*/
+
+
+        .banner {
+            width: 100%;
+            height: 50px;
+            background-color: white;
+            padding: 15px;
+            text-align: center;
+            z-index: 100;
+        }
+
+        @media (max-width: 768px) {
+          nav {
+              /*padding-top: 25px;*/
+          }
+
+          .tagline-container {
+              position: absolute;
+              top: 16%;
+              left: 0;
+              text-align: center;
+          }
+          .tagline-big {
+            font-size: 50px;
+              max-width: 90%;
+              margin-left: 5%;
+
+          }
+
+          .btn-request {
+                width: 180px;
+          }
+
+          .banner {
+            height: 75px;
+            padding: 5px;
+          }
+
+          .nav-logo {
+            padding-top: 15px;
+          }
+
+          .nav-logo img {
+            width: 100px;
+          }
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="banner">
+            We are currently running a fundraising campaign. Check it out at <a href="https://amala.multiplyme.in/">https://amala.multiplyme.in/</a>
+        </div>
+        <div class="nav-container">
+            <div class="nav-logo">
+                <img src="multiplyMeDark.png" alt="logo">
+            </div>
+            <!-- <div class="nav-links">
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div> -->
+        </div>
+    </nav>
+    <header class="banner-background">
+        <div class="tagline-container">
+            <div class="tagline-small">We are</div>
+            <div class="tagline-big"><span class="tagline-emphasis">Changing</span>Fundraising Forever</div>
+            <a class="btn btn-success tagline-btn" href="#request" data-scroll>Request Invite</a>
+        </div>
+    </header>
+    <div class="request-container" id="request">
+        <h1 class="text-white text-center">Request Invite</h1>
+
+        <!-- Begin MailChimp Signup Form -->
+        <div id="mc_embed_signup">
+            <form action="https://MultiplyMe.us10.list-manage.com/subscribe/post?u=37aa354ead06ef426b16aa342&amp;id=fac9050414" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                <div id="mc_embed_signup_scroll">
+                    <div class="mc-field-group input input--isao">
+                        <input class="input__field input__field--isao" type="text" name="NAME" class="required" id="mce-NAME"/>
+                        <label class="input__label input__label--isao" for="mce-NAME" data-content="Your Name">
+                            <span class="input__label-content input__label-content--isao">Your Name</span>
+                        </label>
+                    </div>
+
+
+                    <div class="mc-field-group input input--isao">
+                        <input class="input__field input__field--isao" type="email" name="EMAIL" class="required email" id="mce-EMAIL"/>
+                        <label class="input__label input__label--isao" for="mce-EMAIL" data-content="Email Address">
+                            <span class="input__label-content input__label-content--isao">Email Address</span>
+                        </label>
+                    </div>
+
+                    <div id="mce-responses" class="clear">
+                        <div class="response" id="mce-error-response" style="display:none"></div>
+                        <div class="response" id="mce-success-response" style="display:none"></div>
+                    </div>
+
+                    <input type="submit" value="Yes, Please!" name="subscribe" id="mc-embedded-subscribe" class="btn btn-success btn-request">
+                    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                    <div style="position: absolute; left: -5000px;"><input type="text" name="b_37aa354ead06ef426b16aa342_fac9050414" tabindex="-1" value=""></div>
+                    <div class="clear"></div>
+                    
+                </div>
+            </form>
+        </div>
+        <!--End mc_embed_signup-->
+    </div>
+    <div class="about-container">
+    </div>
+    <script src="smooth-scroll.js"></script>
+    <script>
+        smoothScroll.init();
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-60770553-1', 'auto');
+        ga('send', 'pageview');
+
+    </script>
+
+</body>
+</html>
